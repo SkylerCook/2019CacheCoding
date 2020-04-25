@@ -87,7 +87,7 @@ ClassMethod GetDobByIdNumber(IdNumber As %String = "") As %Date
 
 /// Desc:	get person's sex by Id Number
 /// Output:	1 男; 2 女; 3 未知性别 {对应[CT_Sex]表}
-/// Debug:	d ##class(cook.entity.Person).GetSexDRByIdNumber("610115199607252517")
+/// Debug:	w ##class(cook.entity.Person).GetSexDRByIdNumber("610115199607252517")
 ClassMethod GetSexDRByIdNumber(IdNumber As %String = "") As %Date
 {
 	// [3]: the sex is unknow
