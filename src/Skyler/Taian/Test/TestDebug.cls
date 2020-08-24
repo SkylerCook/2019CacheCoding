@@ -9,7 +9,7 @@ Class Skyler.Taian.Test.TestDebug Extends %RegisteredObject [ ProcedureBlock ]
 /// Output: 
 /// Debug:  w ##class(Skyler.Taian.Test.TestDebug).DebugDemo()
 /// Others:
-ClassMethod DebugDemo(InputParameter As %String = "") As %Status
+ClassMethod DebugDemo(InputParameter As %String = "") As %String
 {
     If (InputParameter = "") {
         s InputParameter = "Hello world!"
@@ -17,8 +17,9 @@ ClassMethod DebugDemo(InputParameter As %String = "") As %Status
     s Version = $ZVersion
     s CurrentSpace = $ZNspace
     s CurrentJob = $Job
-    w Version,!,CurrentSpace,!,CurrentJob
+    w Version,!,CurrentSpace,!,CurrentJob,!
     w InputParameter
+    q InputParameter
 }
 
 }
