@@ -1,14 +1,27 @@
 {
-  // Use IntelliSense to learn about possible attributes.
-  // Hover to view descriptions of existing attributes.
-  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "objectscript",
-      "request": "launch",
-      "name": "ObjectScript Debug Class",
-      "program": ""
-    }
-  ]
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "objectscript",
+            "request": "launch",
+            "name": "ObjectScript Debug Class",
+            "program": "##class(Skyler.Taian.Test.TestDebug).DebugDemo()"
+        },
+        {
+            "type": "objectscript",
+            "request": "launch",
+            "name": "ObjectScript Debug Routine",
+            "program": "^test"
+        },
+        {
+            "type": "objectscript",
+            "request": "attach",
+            "name": "ObjectScript Attach",
+            "processId": "${command:PickProcess}",
+            "system": true
+        }
+    ]
 }

@@ -7,7 +7,7 @@ Class Skyler.Taian.Test.TestDebug Extends %RegisteredObject [ ProcedureBlock ]
 /// Table:  
 /// Input:  InputParameter
 /// Output: 
-/// Debug:
+/// Debug:  w ##class(Skyler.Taian.Test.TestDebug).DebugDemo()
 /// Others:
 ClassMethod DebugDemo(InputParameter As %String = "") As %Status
 {

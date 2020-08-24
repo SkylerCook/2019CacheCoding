@@ -1,12 +1,20 @@
 {
-  "objectscript.conn": {
-    "active": true,
-    "label": "CACHE",
-    "host": "127.0.0.1",
-    "port": 57772,
-    "username": "_system",
-    "password": "sys",
-    "ns": "DHC-APP",
-    "https": false
-  }
+    "objectscript.conn": {
+        "active": true,
+        "label": "CACHE",
+        "host": "127.0.0.1",
+        "port": 57772,
+        "username": "_system",
+        "password": "sys",
+        "ns": "DHC-APP",
+        "https": false
+    },
+    "objectscript.format": {
+        "commandCase": "word",
+        "functionCase": "word"
+    },
+    "objectscript.format.commandCase": null,
+    "objectscript.debug": {
+        "debugThisMethod": true
+    }
 }
