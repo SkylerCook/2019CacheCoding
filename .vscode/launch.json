@@ -14,7 +14,7 @@
             "type": "objectscript",
             "request": "launch",
             "name": "ObjectScript Debug Routine",
-            "program": "^test"
+            "program": "^TestDemo01"
         },
         {
             "type": "objectscript",

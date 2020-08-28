@@ -17,7 +17,8 @@ ClassMethod DebugDemo(InputParameter As %String = "") As %String
     s Version = $ZVersion
     s CurrentSpace = $ZNspace
     s CurrentJob = $Job
-    w Version,!,CurrentSpace,!,CurrentJob,!
+    // s CurrentIP = $ZUTIL(67,15,$JOB)
+    w Version,!,CurrentSpace,!,CurrentJob,!,CurrentDevice
     w InputParameter
     q InputParameter
 }

@@ -1,0 +1,24 @@
+ROUTINE TestDemo01
+
+TestDemo01
+    b
+    d test01()
+    w $$test02(1)
+    q
+
+
+test01()
+    b
+    s now = $HOROLOG
+    s now("Date") = $ZDATE($PIECE(now, ",", 1), 3)
+    s now("Time") = $ztime($piece(now, ",", 2), 1)
+    zw now
+    q
+
+test02(LocId)
+    b
+    s CTLocCode = $piece($get(^CTLOC(LocId)), "^", 1)
+    s CTLocName = $piece($get(^CTLOC(LocId)), "^", 2)
+    s CTLocNameNew = $zconvert(CTLocName, "I", "UTF8")
+    w CTLocNameNew,!
+    q CTLocCode_"^"_CTLocName

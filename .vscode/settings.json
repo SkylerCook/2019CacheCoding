@@ -9,10 +9,18 @@
         "ns": "DHC-APP",
         "https": false
     },
+    // "objectscript.format": {
+    //     "commandCase": "upper",
+    //     "functionCase": "upper"
+    // },
     "objectscript.format": {
-        "commandCase": "word",
-        "functionCase": "word"
+        "commandCase": "lower",
+        "functionCase": "lower"
     },
+    // "objectscript.format": {
+    //     "commandCase": "word",
+    //     "functionCase": "word"
+    // },
     "objectscript.format.commandCase": null,
     "objectscript.debug": {
         "debugThisMethod": true
