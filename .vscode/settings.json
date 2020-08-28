@@ -9,14 +9,14 @@
         "ns": "DHC-APP",
         "https": false
     },
-    // "objectscript.format": {
-    //     "commandCase": "upper",
-    //     "functionCase": "upper"
-    // },
     "objectscript.format": {
-        "commandCase": "lower",
-        "functionCase": "lower"
+        "commandCase": "upper",
+        "functionCase": "upper"
     },
+    // "objectscript.format": {
+    //     "commandCase": "lower",
+    //     "functionCase": "lower"
+    // },
     // "objectscript.format": {
     //     "commandCase": "word",
     //     "functionCase": "word"

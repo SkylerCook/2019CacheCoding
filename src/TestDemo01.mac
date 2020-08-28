@@ -8,7 +8,6 @@ TestDemo01
 
 
 test01()
-    b
     s now = $HOROLOG
     s now("Date") = $ZDATE($PIECE(now, ",", 1), 3)
     s now("Time") = $ztime($piece(now, ",", 2), 1)
@@ -16,9 +15,8 @@ test01()
     q
 
 test02(LocId)
-    b
     s CTLocCode = $piece($get(^CTLOC(LocId)), "^", 1)
     s CTLocName = $piece($get(^CTLOC(LocId)), "^", 2)
-    s CTLocNameNew = $zconvert(CTLocName, "I", "UTF8")
+    s CTLocNameNew = $zconvert(CTLocName, "O", "UTF8")
     w CTLocNameNew,!
     q CTLocCode_"^"_CTLocName
