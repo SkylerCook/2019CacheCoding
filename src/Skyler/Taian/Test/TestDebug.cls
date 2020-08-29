@@ -11,14 +11,16 @@ Class Skyler.Taian.Test.TestDebug Extends %RegisteredObject [ ProcedureBlock ]
 /// Others:
 ClassMethod DebugDemo(InputParameter As %String = "") As %String
 {
+    
     If (InputParameter = "") {
         s InputParameter = "Hello world!"
     }
+    b
     s Version = $ZVersion
+    b
     s CurrentSpace = $ZNspace
     s CurrentJob = $Job
-    // s CurrentIP = $ZUTIL(67,15,$JOB)
-    w Version,!,CurrentSpace,!,CurrentJob
+    w Version,!,CurrentSpace,!,CurrentJob,!
     w InputParameter
     q InputParameter
 }
